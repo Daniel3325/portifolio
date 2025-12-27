@@ -62,11 +62,32 @@ body{
 }
 
 .top-site ul li a{
+    position: relative;
     color: white;
     text-decoration: none;
     font-size: 25px;
     font-family: Helvena;
     cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.top-site ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.top-site ul li a:hover{
+    transform: scale(1.1);
+}
+
+.top-site ul li a:hover::after{
+    width: 100%;
 }
 
 /*-----------------------------------------------*/
