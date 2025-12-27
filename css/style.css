@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Helvena;
+    src: url(../sources/fonts/HELVENA-MEDIUM.TTF);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*---------------------Background---------------------*/
+    background-image: url(../sources/img/Background-site.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.top-site{
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    /*background-color: antiquewhite;*/
+    display: inline-flex;
+}
+
+.top-site .arrow{
+    width: 50%;
+    height: 10vh;
+    margin: 0;
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
+.top-site .arrow img{
+    width: 5%;
+    height: 5vh;
+    margin: 0 0 0 3%;
+}
+
+.top-site ul{
+    width: 50%;
+    height: 10vh;
+    margin: 0;
+    /*background-color: black;*/
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-site ul li{
+    margin: 0 50px 0 50px;
+    list-style: none;
+    transition: transform 0.3s ease;
+}
+
+.top-site ul li:hover{
+    transform: scale(1.1);
+}
+
+.top-site ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Helvena;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------*/
+
+.center-site{
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    /*background-color: antiquewhite;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
