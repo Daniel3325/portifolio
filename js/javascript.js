@@ -7,3 +7,7 @@ document.querySelectorAll(".design").forEach(img => {
         window.open(img.src, "_blank");
     });
 })
+
+document.getElementById("btn-insta").addEventListener("click", function(){
+    window.location.href = "https://www.instagram.com/?theme=dark"
+})

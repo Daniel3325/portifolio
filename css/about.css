@@ -102,22 +102,118 @@ body{
 
 @media (max-width: 1280px) {
     body{
-        display: none;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    /*---------------------Background---------------------*/
+        background-image: url(../sources/img/Background-site-Mobile-2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
     }
 
-    html::before{
-        content: "Este site não está disponível para dispositivos móveis";
-        position: fixed;
-        inset: 0;
-        background: black;
-        color: white;
+    .top-site{
+        width: 100%;
+        height: 10vh;
+        margin: 0;
+        /*background-color: antiquewhite;*/
+        display: inline-flex;
+    }
+
+    .top-site .arrow{
+        width: 30%;
+        height: 10vh;
+        margin: 0;
+        display: flex;
+        float: left;
+        align-items: center;
+    }
+
+    .top-site .arrow img{
+        width: 35%;
+        height: 5.3vh;
+        margin: 0 0 0 15%;
+    }
+    .top-site ul{
+        width: 70%;
+        height: 10vh;
+        padding: 0;
+        margin: 0;
+        /*background-color: black;*/
+        float: right;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
+    }
+
+    .top-site ul li{
+        margin: 0;
+        list-style: none;
+        transition: transform 0.3s ease;
+    }
+
+    .top-site ul li:hover{
+        transform: scale(1.1);
+    }
+
+    .top-site ul li a{
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
         font-family: Helvena;
-        font-size: 1.4rem;
-        padding: 20px;
-        z-index: 9999;
+        text-align: center;
+        transition: transform 0.2s ease;
+    }
+
+    .top-site ul li a::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.3s ease;
+    }
+
+    .top-site ul li align-self:hover{
+        transform: scale(1.1);
+    }
+
+    .top-site ul li a:hover::after{
+        width: 100%;
+    }
+
+    /*-------------------------------*/
+
+    .center-site{
+        width: 100%;
+        height: 90vh;
+        margin: 0;
+        padding: 45% 0 0 0;
+        /*background-color: rgba(0, 255, 255, 0.247);*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center-site button{
+        width: 33%;
+        height: 7%;
+        margin: 0;
+        background: #f09433;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+        border-radius: 50px;
+        border: none;
+        font-size: 20px;
+        font-family: Helvena;
+        color: white;
+        box-shadow: 0 0 2% 2%;
     }
 }
