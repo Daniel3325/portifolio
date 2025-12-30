@@ -174,7 +174,7 @@ body{
         align-items: center;
     /*---------------------Background---------------------*/
         background-image: url(../sources/img/Background-site-Mobile-PD.png);
-        background-repeat: no-repeat;
+        /*background-repeat: no-repeat;*/
         background-position: center;
         background-size: 100%;
     }
@@ -250,5 +250,69 @@ body{
 
     .top-site ul li a:hover::after{
         width: 100%;
+    }
+
+    /*-----------------------------------------------*/
+
+    .center-site{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        /*background-color: rgba(248, 64, 64, 0.521);*/
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .center-site .designs{
+        width: 95%;
+        height: auto;
+        margin: 25% 0 30% 0;
+        padding: 0 0 4% 0;
+        border: 3px solid;
+        border-color: white;
+        border-width: 3%;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .center-site .designs h1{
+        color: white;
+        font-family: Helvena;
+        font-size: 70px;
+        text-align: center;
+        position: static;
+    }
+
+    .center-site .designs .wall{
+        width: 95%;
+        height: auto;
+        margin: 0;
+        /*background-color: aqua;*/
+        padding: 0;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center-site .designs img{
+        width: 90px;
+        height: 112px;
+        margin: 3%;
+        padding: 0.5%;
+        border: 2px solid;
+        border-radius: 5px;
+        border-color: white;
+        transition: transform 0.3s ease;
+    }
+
+    .center-site .designs img:hover{
+        transform: scale(1.1);
+        cursor: pointer;
     }
 }

@@ -3,7 +3,7 @@
     src: url(../sources/fonts/HELVENA-MEDIUM.TTF);
 }
 
-/*body{
+body{
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -11,18 +11,18 @@
     flex-direction: column;
     align-items: center;
     /*---------------------Background---------------------*/
-    /*background-image: url(../sources/img/Background-site.png);
+    background-image: url(../sources/img/Background-site.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-}*/
+}
 
-/*.top-site{
+.top-site{
     width: 100%;
     height: 10vh;
     margin: 0;
     /*background-color: antiquewhite;*/
-    /*display: inline-flex;
+    display: inline-flex;
 }
 
 .top-site .arrow{
@@ -45,7 +45,7 @@
     height: 10vh;
     margin: 0;
     /*background-color: black;*/
-    /*float: right;
+    float: right;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,20 +88,20 @@
 
 .top-site ul li a:hover::after{
     width: 100%;
-}*/
+}
 
 /*-----------------------------------------------*/
 
-/*.center-site{
+.center-site{
     width: 100%;
     height: 90vh;
     margin: 0;
     /*background-color: antiquewhite;*/
-    /*display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}*/
+}
 
 /*-------------------------------------Dispositivos Móveis-------------------------------------*/
 
