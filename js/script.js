@@ -9,5 +9,6 @@ document.querySelectorAll(".design").forEach(img => {
 })
 
 document.getElementById("btn-insta").addEventListener("click", function(){
-    window.location.href = "https://www.instagram.com/?theme=dark"
+    const url = "https://www.instagram.com/danieldeandradepli/?theme=dark";
+    window.open(url, "_blank", "noopener, noreferrer");
 })

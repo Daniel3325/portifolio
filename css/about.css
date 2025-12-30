@@ -98,6 +98,40 @@ body{
     width: 100%;
 }
 
+/*-----------------------------------------------*/
+
+.center-site{
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.center-site button{
+    width: 10%;
+    height: 7%;
+    margin: 0 0 7% 0;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    border-radius: 50px;
+    border: none;
+    font-size: 27px;
+    font-family: Helvena;
+    color: white;
+    box-shadow: 0 0 2% 2%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.center-site button:hover{
+    transform: scale(1.1);
+}
+
 /*-----Dispositivos Móveis-----*/
 
 @media (max-width: 1280px) {
@@ -110,7 +144,7 @@ body{
         align-items: center;
     /*---------------------Background---------------------*/
         background-image: url(../sources/img/Background-site-Mobile-2.png);
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;!important
         background-position: center;
         background-size: 100%;
     }
@@ -194,17 +228,17 @@ body{
         width: 100%;
         height: 90vh;
         margin: 0;
-        padding: 45% 0 0 0;
+        padding: 0;
         /*background-color: rgba(0, 255, 255, 0.247);*/
         display: flex;
-        justify-content: center;
         align-items: center;
+        flex-direction: column-reverse;
     }
 
     .center-site button{
         width: 33%;
         height: 7%;
-        margin: 0;
+        margin: 0 0 60% 0;
         background: #f09433;
         background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
         background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);

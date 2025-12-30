@@ -155,12 +155,17 @@ body{
     border-radius: 5px;
     border-color: white;
     transition: transform 0.3s ease;
+    position: static;
 }
 
 .center-site .designs img:hover{
     transform: scale(1.1);
     cursor: pointer;
+    padding: 0;
+    margin: 3.5%;
 }
+
+
 
 /*-----Dispositivos Móveis-----*/
 
@@ -314,5 +319,7 @@ body{
     .center-site .designs img:hover{
         transform: scale(1.1);
         cursor: pointer;
+        padding: 0;
+        margin: 3.5%;
     }
 }
